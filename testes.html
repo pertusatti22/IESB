@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANÇAMENTO DE NOTAS</title>
+</head>
+
+<body>
+    <main>
+        <h1>LANÇAMENTO DE NOTAS</h1>
+
+        <section>
+            <form id="notas">
+                <label for="disciplinas">
+                    <h2>Selecione a disciplina</h2>
+                </label>
+                <select name="disciplinas" id="disciplinas" form="notas" autofocus>
+                    <option value="default"> - </option>
+                    <option value="introInf">Introdução à informática</option>
+                    <option value="linguPro">Linguagens de Programação</option>
+                    <option value="progrCom">Programação de Computadores</option>
+                </select>
+                <br>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Aluno</th>
+                            <th>Prova 1</th>
+                            <th>Prova 2</th>
+                            <th>Exame</th>
+                            <th>Média</th>
+                            <th>Faltas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Joana da Silva</td>
+                            <td><input id="prova1" name="prova1" type="number" min="0" max="10" form="notas"
+                                    onblur="calcularMedia(this, 1)" value="" required></td>
+                            <td><input id="prova2" name="prova2" type="number" min="0" max="10" form="notas"
+                                    onblur="calcularMedia(this, 2)" value="" required></td>
+                            <td><input id="exame" name="exame" type="number" min="0" max="10" form="notas"
+                                    onblur="calcularMedia(this, 3)" value=""></td>
+                            <td><input id="media" type="number" form="notas" tabindex="-1" readonly></td>
+                            <td><input id="faltas" name="faltas" type="number" min="0" max="16" form="notas" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maria do Socorro</td>
+                            <td><input type="number" min="0" max="10" required></td>
+                            <td><input type="number" min="0" max="10" required></td>
+                            <td><input type="number" min="0" max="10"></td>
+                            <td readonly="">Cálculo</td>
+                            <td><input type="number" min="0" max="16" required></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Santos</td>
+                            <td><input type="number" min="0" max="10" required></td>
+                            <td><input type="number" min="0" max="10" required></td>
+                            <td><input type="number" min="0" max="10"></td>
+                            <td readonly="">Cálculo</td>
+                            <td><input type="number" min="0" max="16" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+    </main>
+    <script>
+        const CURRENT_MEDIA = document.getElementById('media');
+
+        function calcularMedia(evt, pos) {
+            const prova1 = Number(document.getElementById('prova1').value);
+            const prova2 = Number(document.getElementById('prova2').value);
+            const exame = Number(document.getElementById('exame').value);
+
+            const media = (prova1 + prova2 + exame) / 3;
+            CURRENT_MEDIA.value = media;
+            console.log('Executou!', evt, pos);
+        }
+    </script>
+
+</body>
+
+</html>
