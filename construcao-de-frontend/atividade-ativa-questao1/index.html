@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade ativa - Questão 1</title>
+    <style>
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      td {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+
+      .text-input {
+        width: 96%;
+      }
+      .number-input {
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="cadastro">
+      <h2>Ficha Cadastral</h2>
+      <table width="500px" cellspacing="1px" cellpadding="1px">
+        <tbody>
+          <tr>
+            <td>Nome:</td>
+            <td colspan="3">
+              <input
+                id="name"
+                class="text-input"
+                name="name"
+                type="text"
+                min="1"
+                max="55"
+                form="cadastro"
+                value=""
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>RG:</td>
+            <td>
+              <input
+                id="rg"
+                class="number-input"
+                name="rg"
+                type="number"
+                min="1"
+                max="13"
+                form="cadastro"
+                value=""
+                required
+              />
+            </td>
+            <td>C.P.F.:</td>
+            <td>
+              <input
+                id="cpf"
+                class="number-input"
+                name="cpf"
+                type="number"
+                min="1"
+                max="13"
+                form="cadastro"
+                value=""
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Endereço:</td>
+            <td colspan="3">
+              <input
+                id="endereco"
+                class="text-input"
+                name="endereco"
+                type="text"
+                min="1"
+                max="55"
+                form="cadastro"
+                value=""
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Sexo:</td>
+            <td>
+              <select id="sexo" name="sexo" form="cadastro" required>
+                <option selected="selected"></option>
+                <option value="Masculino" id="masculino">Masculino</option>
+                <option value="Feminino" id="masculino">Feminino</option>
+              </select>
+            </td>
+            <td>Data Nascimento:</td>
+            <td>
+              <input
+                id="nascimento"
+                name="nascimento"
+                type="date"
+                form="cadastro"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Situação Civil</td>
+            <td>
+              <input
+                id="situacao-civil"
+                name="situacao-civil"
+                type="radio"
+                form="cadastro"
+              /><label for="situacao-civil">Solteiro(a)</label>
+            </td>
+            <td>
+              <input
+                id="situacao-civil"
+                name="situacao-civil"
+                type="radio"
+                form="cadastro"
+              /><label for="situacao-civil">Casado(a)</label>
+            </td>
+            <td>
+              <input
+                id="situacao-civil"
+                name="situacao-civil"
+                type="radio"
+                form="cadastro"
+              /><label for="situacao-civil">Viúvo(a)</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="reset" value="Limpar Dados" />
+    </form>
+  </body>
+</html>
