@@ -1,6 +1,6 @@
-import logo from '../logo.svg';
+import logo from './';
 import './App.css';
-import Clock from './Clock';
+import UiClock from '../components/Ui/Clock';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         </a>
       </header>
       <main>
-        <Clock />
+        <UiClock />
       </main>
 
     </div>

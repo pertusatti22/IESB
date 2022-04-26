@@ -1,0 +1,10 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  padding-top: 80px;
+  background-color: purple;
+  border: 10px solid lightyellow;
+}

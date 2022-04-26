@@ -1,3 +1,36 @@
+Nomear componentes em Capitalize, mostrando o caminho do componente. No exemplo das pastas abaixo:
+UiButton
+UserForm
+UserList
+
+----
+
+Organização de pastas no React:
+Agrupar os arquivos por Módulo/Feature
+se um dos componentes da feature tiver mais de um arquivo(exemplo form) criar uma pasta pra ele dentro da feature.
+Além das pastas específicas, ter a pasta UI para componentes genéricos da aplicação, como buttons, inputs, checkboxes, selects, modais, elementos de apresentação de dados e etc
+Também temos uma pasta Screens para as telas que temos dentro da aplicação, exemplo em um CRUD de usuários teríamos para a listagem, uma para a criação e uma tela para a edição. cada uma delas seria uma screen. Uma screen é onde você utiliza os componentes para compor uma tela. Quanto menor a estrutura da screen, melhor. Idealmente, ela não conterá nenhum tipo de lógica.
+A pasta das screens fica no mesmo nível da pasta components.
+
+- src
+-- screens
+--- user
+---- edit
+----- edit.jsx
+-- components
+--- Ui
+---- Button
+----- Button.jsx
+----- Button.css
+--- User
+---- Form
+-----  Form.jsx
+------ Form.css
+---- List.jsx
+
+
+-----
+
 exemplo de instalação de componente externo React para seleção de data e hora com npm:
 
 -> npm install react-datepicker --save
