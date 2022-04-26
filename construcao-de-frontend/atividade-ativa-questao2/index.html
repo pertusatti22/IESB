@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade ativa - Questão 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <a src="#">
+        <div class="logo">
+          <div class="blue"></div>
+          <div class="yellow"></div>
+          <div class="red"></div>
+          <div class="green"></div>
+        </div>
+        <h1>EnqueteProduto</h1>
+      </a>
+      <h2>O lugar onde sua opinião é levada a sério!</h2>
+      <nav>
+        <a href="https://www.linkedin.com/in/pertusatti22/" target="blank">
+          <img class="linkedin" />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img class="produto" src="./macbookpro.jpg" />
+      </section>
+      <section>
+        <h3 class="questionario">Questionário</h3>
+        <h4 class="questionario">
+          Responda as seguintes questões e contribua com nossa pesquisa:
+        </h4>
+        <form id="opiniao">
+          <ol>
+            <li>
+              Em uma escala de 0 a 5, quanto você recomendaria o Macbook Pro
+              2021?<br />
+              <input id="0" type="radio" form="opiniao" /><label for="0">
+                0</label
+              >
+              <input id="1" type="radio" form="opiniao" /><label for="1">
+                1</label
+              >
+              <input id="2" type="radio" form="opiniao" /><label for="2">
+                2</label
+              >
+              <input id="3" type="radio" form="opiniao" /><label for="3">
+                3</label
+              >
+              <input id="4" type="radio" form="opiniao" /><label for="4">
+                4</label
+              >
+              <input id="5" type="radio" form="opiniao" /><label for="5">
+                5</label
+              >
+            </li>
+            <li>
+              Selecione a palavra que mais se identifica com o Macbook Pro para
+              você?<br />
+              <select id="identifica" form="opiniao">
+                <option selected="selected"></option>
+                <option value="Confiável" id="1">Confiável</option>
+                <option value="Caro" id="2">Caro</option>
+                <option value="Útil" id="3">Muito útil</option>
+                <option value="Qualidade" id="4">De Qualidade</option>
+                <option value="Ineficaz" id="5">Ineficaz</option>
+              </select>
+            </li>
+            <li>
+              Você concorda que o Macbook Pro agregou valor a sua vida?<br />
+              <select id="agregou" form="opiniao">
+                <option selected="selected"></option>
+                <option value="sim" id="1">Sim</option>
+                <option value="não" id="2">Não</option>
+              </select>
+            </li>
+            <li>
+              Qual a probabilidade de você comprar novamente um produto da mesma
+              marca do Macbook Pro?<br />
+              <select id="probabilidade" form="opiniao">
+                <option selected="selected"></option>
+                <option value="alta" id="1">Alta</option>
+                <option value="média" id="2">Média</option>
+                <option value="baixa" id="3">Baixa</option>
+              </select>
+            </li>
+            <li>
+              Por fim, conte um pouco como você tomou conhecimento do Macbook
+              Pro?<br />
+              <textarea id="conhecimento" name="conhecimento" rows="5" cols="33" placeholder="Digite Aqui..."></textarea
+              >
+            </li>
+          </ol>
+          <nav class="menu-form">
+            <input class="menu-button" type="submit" value="Salvar" form="opiniao" />
+            <input class="menu-button" type="reset" value="Limpar" form="opiniao" />
+          </nav>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>Developed by <b>Jackson Pertusatti</b></div>
+      <div>Creating Dreams since 2020.</div>
+    </footer>
+  </body>
+</html>

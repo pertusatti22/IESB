@@ -1,0 +1,11 @@
+A empresa Apple fabrica produtos de tecnologia de alta qualidade e você questionará o usuário sobre a opinião dele referente ao produto. Esse produto é um Macbook Pro 2021, portanto, todas as perguntas estão direcionadas a esse tema (você deve elaborar as perguntas). 
+
+ Lembre-se que ao desenvolver sua página você poderá utilizar vários elementos diferentes de HTML, CSS, bootstrap, JavaScript entre outras tecnologias e framework de Frontend, como achar necessário.
+Regras: 
+Você deve utilizar recurso de HTML e CSS em seu código. Essa regra é um requisito visto que você poderá explorar melhor como cada elemento funciona.
+Layout do Site:
+O aluno pode criar seu layout com os menus, configurações e formatação que achar melhor.
+ꧏ Deve ser Hospedado no https://br.000webhost.com ou em seu servidor de hospedagem favorito.
+ꧏ Não será aceito após o prazo estipulado. 
+ꧏ Não será aceito plágio (CTRL + C/V). 
+ꧏ Dúvidas podem ser postadas no fórum permanente de dúvidas. 
