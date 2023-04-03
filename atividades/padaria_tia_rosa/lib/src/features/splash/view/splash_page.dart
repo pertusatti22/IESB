@@ -26,12 +26,15 @@ class _SplashPageState extends State<SplashPage> {
         children: [
           Center(
             child: Image.asset(
-              LOGO,
-              height: 96,
+              logoLite,
+              height: 196,
             ),
           ),
           Text(
-            TITLE.toUpperCase(),
+            title.toUpperCase(),
+            style: const TextStyle(
+              color: Colors.white,
+            ),
           ),
         ],
       ),
