@@ -49,8 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.icecream_outlined,),label: "Pedidos",),
-          BottomNavigationBarItem(icon: Icon(Icons.newspaper_sharp,),label: "Promo",),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag,),label: "Ofertas",),
+          BottomNavigationBarItem(icon: Icon(Icons.star,),label: "Favoritos",),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart,),label: "Carrinho",),
         ],
       ),
     );
