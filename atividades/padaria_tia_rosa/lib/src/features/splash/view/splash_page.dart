@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:padaria_tia_rosa/src/constants.dart';
+import 'package:padaria_tia_rosa/src/features/home/view/home_page.dart';
+import 'package:padaria_tia_rosa/src/features/onboard/view/onboard_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

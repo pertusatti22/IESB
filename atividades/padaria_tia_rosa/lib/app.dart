@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:padaria_tia_rosa/src/constants.dart';
 import 'package:padaria_tia_rosa/src/features/home/view/home_page.dart';
 import 'package:padaria_tia_rosa/src/features/onboard/view/onboard_page.dart';
 import 'package:padaria_tia_rosa/src/features/splash/view/splash_page.dart';
@@ -15,12 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const SplashPage(),
+      initialRoute:'/splash',
+      routes:{
+        '/splash': (context) => const SplashPage(),
         '/onboard': (context) => const OnBoardPage(),
-        '/home': (context) => const MyHomePage(title: 'Padaria Tia Rosa'),
-      },
+        '/home': (context) => const MyHomePage(title: title),
+      }
     );
   }
 }
