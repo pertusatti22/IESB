@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:padaria_tia_rosa/src/features/carrinho/view/Carrinho_page.dart';
 import 'package:padaria_tia_rosa/src/features/favoritos/view/Favoritos_page.dart';
-import 'package:padaria_tia_rosa/src/features/ofertas/view/Ofertas_page.dart';
+import 'package:padaria_tia_rosa/src/features/ofertas/view/ofertas_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
