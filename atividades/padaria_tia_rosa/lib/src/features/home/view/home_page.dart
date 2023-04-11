@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:padaria_tia_rosa/src/features/carrinho/view/Carrinho_page.dart';
-import 'package:padaria_tia_rosa/src/features/favoritos/view/Favoritos_page.dart';
+import 'package:padaria_tia_rosa/src/features/carrinho/view/carrinho_page.dart';
+import 'package:padaria_tia_rosa/src/features/favoritos/view/favoritos_page.dart';
 import 'package:padaria_tia_rosa/src/features/ofertas/view/ofertas_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -35,11 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
             FavoritosPage(),
             CarrinhoPage(),
           ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          tooltip: 'Increment',
-          child: const Icon(Icons.add),
         ),
         bottomNavigationBar: AnimatedBuilder(
           animation: pageController,
