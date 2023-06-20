@@ -14,8 +14,8 @@ Critérios de Avaliação
 ### Instruções para a atividade
 
 - [x] Faça em uma linguagem qualquer que você tenha mais conhecimento um programa que lê 3 valores inteiros que representem os lados de um triângulo.
-- O programa então informa se os valores dos lados formam um triângulo do tipo isósceles, escaleno ou equilátero. Ou se os valores não formam um triângulo.
-- Depois você fará 8 casos de testes a seguir e os executará no seu programa:
+- [x] O programa então informa se os valores dos lados formam um triângulo do tipo isósceles, escaleno ou equilátero. Ou se os valores não formam um triângulo.
+- [ ] Depois você fará 8 casos de testes a seguir e os executará no seu programa:
 - [ ] Dois casos de testes para Triângulo Isóceles Válido; 
 - [ ] Dois casos de testes para Triângulo Escaleno Válido; 
 - [ ] Dois casos de testes para Triângulo Equilátero Válido;
