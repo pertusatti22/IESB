@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:atividade_ativa/atividade_ativa.dart';
+
 void main(List<String> arguments) {
   String? entrada;
   int? lado;
@@ -22,21 +24,13 @@ void main(List<String> arguments) {
   }
 
   // Apresenta o tipo de triângulo
-  if (triangulo[0] + triangulo[1] <= triangulo[2] ||
-      triangulo[0] + triangulo[2] <= triangulo[1] ||
-      triangulo[1] + triangulo[2] <= triangulo[0]) {
+  if (naoTriangulo(triangulo[0], triangulo[1], triangulo[2])) {
     print('Não é um triângulo');
-  } else if (triangulo[0] == triangulo[1] &&
-      triangulo[0] == triangulo[2] &&
-      triangulo[1] == triangulo[2]) {
+  } else if (equilatero(triangulo[0], triangulo[1], triangulo[2])) {
     print('Triângulo Equilátero');
-  } else if (triangulo[0] != triangulo[1] &&
-      triangulo[0] != triangulo[2] &&
-      triangulo[1] != triangulo[2]) {
+  } else if (escaleno(triangulo[0], triangulo[1], triangulo[2])) {
     print('Triângulo Escaleno');
-  } else if (triangulo[0] == triangulo[1] ||
-      triangulo[0] == triangulo[2] ||
-      triangulo[1] == triangulo[2]) {
+  } else if (isosceles(triangulo[0], triangulo[1], triangulo[2])) {
     print('Triângulo Isósceles');
   }
 }
